@@ -6,10 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-.form-group {
-  width: 200px;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -32,13 +28,28 @@ ul {
 .result:hover {
   background-color: #eee;
 }
-
 form {
   display: flex;
+}
+.hover {
+  background-color: #eee;
+}
+/*Modified CSS to keep both forms on top of div */
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex: auto;
+}
+
+/*Modified CSS to align divs with inline-block */
+.form-group {
+  width: 200px;
+  display: inline-block;
 }
 
 .form-group + .form-group {
   margin-left: 50px;
+  display: inline-block;
 }
 
 input {
